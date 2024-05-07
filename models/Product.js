@@ -20,11 +20,10 @@ Product.init(
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
-      primaryKey: true,
     },
     // This is establishing the price of the products
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL (10, 2),
       allowNull: false,
       validate: {
         isDecimal: true,

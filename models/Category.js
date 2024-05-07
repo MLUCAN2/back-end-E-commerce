@@ -18,7 +18,7 @@ Category.init(
     },
     // This will display the category name and doesn't allow it to be empty
     category_name: {
-      type: String,
+      type: DataTypes.STRING,
       allowNull: false,
 
     },
